@@ -35,6 +35,10 @@ if($method == 'POST'){
             $speech = "c est de la merde";
             break;
 
+        case 'prout':
+            $speech = "Hackathon !!";
+            break;
+
         default:
             $speech = "Sorry, I didnt get that. Please ask me something else.";
             break;
