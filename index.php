@@ -32,7 +32,7 @@ if($method == 'POST'){
             break;
 
         case 'quoi un sushi':
-            $speech = "c'est de la merde";
+            $speech = "c est de la merde";
             break;
 
         default:
