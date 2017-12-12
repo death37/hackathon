@@ -31,6 +31,9 @@ if($method == 'POST'){
             $speech = "Débrouille toi !!";
             break;
 
+        case 'c\'est quoi un sushi?':
+            $speech = "c'est de la merde";
+
         default:
             $speech = "Sorry, I didnt get that. Please ask me something else.";
             break;
