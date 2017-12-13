@@ -43,7 +43,7 @@ if($method == 'POST'){
             $speech = "Sorry, I didnt get that. Please ask me something else.";
             break;
     }
-    var_dump($text);
+
     $response = new \stdClass();
     $response->speech = $speech;
     $response->displayText = $speech;
@@ -52,6 +52,7 @@ if($method == 'POST'){
 }
 else
 {
+    var_dump($response);
     echo "Method not allowed";
 }
 
