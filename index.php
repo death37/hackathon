@@ -13,7 +13,7 @@ if($method == 'POST'){
     $json = json_decode($requestBody);
 
     $text = $json->result->parameters->text;
-    var_dump($text);
+
     switch ($text) {
         case 'hi':
             $speech = "Hi, Nice to meet you";
@@ -43,7 +43,7 @@ if($method == 'POST'){
             $speech = "Sorry, I didnt get that. Please ask me something else.";
             break;
     }
-
+    var_dump($text);
     $response = new \stdClass();
     $response->speech = $speech;
     $response->displayText = $speech;
